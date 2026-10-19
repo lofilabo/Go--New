@@ -1,0 +1,47 @@
+
+1.
+https://pkuwwt.github.io/programming/2020-04-05-usage-of-go-binding-for-qt/
+
+
+2.
+0. Possibly ignore and move to 1
+
+Go install
+
+sudo apt-get install gccgo-5
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt update
+sudo apt install golang-go
+
+
+1. From:
+        https://stackoverflow.com/questions/17480044/how-to-install-the-current-version-of-go-in-ubuntu-precise
+
+For fetching the latest version:
+
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt update
+sudo apt install golang-go
+
+
+3.
+CURRENT TEST:
+/home/richard/go/src/golang.org/x
+ALSO:
+/home/richard/gohello3
+
+First:
+https://pkuwwt.github.io/programming/2020-04-05-usage-of-go-binding-for-qt/
+
+Then:
+go mod init widget
+
+and then:
+go mod tidy
+
+and then:
+go run hello.go
+
+
+
+
