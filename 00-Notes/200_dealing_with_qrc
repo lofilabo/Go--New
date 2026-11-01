@@ -1,0 +1,24 @@
+In both cases.
+    core.NewQUrl3("qrc:/qml/ .............
+is replaced by
+    core.QUrl_FromLocalFile("./qml/  .............
+
+1.
+02-qml
+/main.go
+
+ // load the embedded qml file
+// created by either qtrcc or qtdeploy
+//       engine.Load(core.NewQUrl3("qrc:/qml/main.qml", 0))
+// you can also load a local file like this instead:
+engine.Load(core.QUrl_FromLocalFile("./qml/main.qml"))
+
+2.
+03-BestWinYet
+/application.go
+
+ var app = qml.NewQQmlApplicationEngine(nil)
+//app.Load(core.NewQUrl3("qrc:/qml/application.qml", 0))
+app.Load(core.QUrl_FromLocalFile("./qml/application.qml"))
+gui.QGuiApplication_Exec()
+
