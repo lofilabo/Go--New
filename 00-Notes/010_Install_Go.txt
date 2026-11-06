@@ -1,0 +1,44 @@
+sudo apt-get install gccgo-5
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt update
+sudo apt install golang-go
+pwd
+go run hello.go
+mkdir -p $(go env GOPATH)/src/golang.org/x
+cd $(go env GOPATH)/src/golang.org/x
+git clone https://github.com/golang/mod.git
+sudo apt install git
+git clone https://github.com/golang/mod.git
+git clone https://github.com/golang/sys.git
+git clone https://github.com/golang/text.git
+git clone https://github.com/golang/tools.git
+git clone https://github.com/golang/xerrors.git
+nano hello.go
+go run hello.go
+nano hello.go
+go run hello.go
+export GO111MODULE=off
+go get -v github.com/therecipe/qt/cmd/...
+$(go env GOPATH)/bin/qtsetup -test=false
+pwd
+ls
+go build hello.go
+set GO111MODULE=off go get -v github.com/therecipe/qt/cmd/... && for /f %v in (‘go env GOPATH’) do %v\bin\qtsetup test && %v\bin\qtsetup -test=false
+go mod init widget
+sudo go mod init widget
+go mod tidy
+go build hello.go
+go mod init widget
+export GO111MODULE=on
+go mod init widget
+go build hello.go
+go mod init widget
+go run hello.go
+go get github.com/therecipe/qt/widgets
+sudo go get github.com/therecipe/qt/widgets
+go run hello.go
+ls g*
+ls
+nano server.txt
+go run hello.go
+
