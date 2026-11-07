@@ -2,9 +2,19 @@
 
 go install -ldflags="-w" github.com/therecipe/qt/internal/binding/files/docs/5.13.0@latest
 
+i.
 sudo go env -w GO111MODULE=off
+
+ii.
+go env -w GO111MODULE=on
 
 go mod init widget
 
 go mod tidy
 
+
+More Recent:
+go env -w GO111MODULE=on
+go mod init widget
+go mod tidy
+go run (something).go
