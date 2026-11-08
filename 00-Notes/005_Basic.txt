@@ -1,0 +1,11 @@
+Install:
+go install -ldflags="-w" github.com/therecipe/qt/internal/binding/files/docs/5.13.0@latest
+
+
+Each Project:
+go env -w GO111MODULE=on
+go mod init widget
+go mod tidy
+go run (something).go
+
+
