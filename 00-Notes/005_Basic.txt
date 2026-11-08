@@ -8,4 +8,11 @@ go mod init widget
 go mod tidy
 go run (something).go
 
+And Then:
+
+1.
+go mod tidy
+
+2.
+sudo go mod init widget
 
