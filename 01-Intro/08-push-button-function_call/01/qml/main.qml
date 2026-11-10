@@ -68,6 +68,7 @@ ApplicationWindow {
 	function two_advance() { 
 		console.log("two_advance -- Blaaaaargh") 
 		input.text = "8768"
+		console.log(input2.text) 
 	}
 
 }
