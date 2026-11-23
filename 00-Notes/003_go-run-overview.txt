@@ -1,0 +1,10 @@
+
+go mod tidy
+
+go mod init widget
+
+go mod tidy
+
+go run main.go
+       ^^^^^^^-------change / modify 
+
